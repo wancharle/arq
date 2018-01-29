@@ -13,9 +13,7 @@
 <body>
 <div id="conteudo">
 
-     <h1>Trabalho de Teleprocessamento - 2011/2</h1>  
-         <p><strong>Tema:</strong> Controle de fluxo com resposta positiva e negativa. Simular um método ARQ sem janelas deslizantes.</p>
-         <p><strong>Grupo 2:</strong> Ana Carolina Eller, Glaice Kelly, Wancharle Quirino</p>
+     <h1>Simulador de protocolo ARQ</h1>  
       
      <h2 >Simula&ccedil;&atilde;o</h2>
 
@@ -90,8 +88,8 @@
    <div class="clear"></div><br>
 
 
-<h2>Sobre o Trabalho</h2> 
-<p>No trabalho utilizamos a técnica "stop and wait" do protocolo ARQ. Este é o método mais simples, pois não utiliza janelas deslizantes.</p>
+<h2>Sobre a simulação</h2> 
+<p>A simulação utiliza a técnica "stop and wait" do protocolo ARQ. Este é o método mais simples, pois não utiliza janelas deslizantes.</p>
 <p>Nele após o envio de cada frame, o transmissor não envia outros quadros até que receba um sinal de confirmação (ACK). Depois de receber um quadro bom, o receptor envia um ACK. Se o ACK não chegar ao remetente antes de um certo tempo, conhecido como timeout, o transmissor envia o mesmo quadro novamente. </p> 
 
 
@@ -103,17 +101,10 @@ Desta forma se o receptor recebe dois pacotes consecutivos e ambos possuem o mes
 
 <h3>Implementação da simulação</h3>
 <p>A simulação foi implementada em javascript. Por ser uma aplicação web, não existe  necessidade de compilar o codigo. Desta forma pode ser utilizada em qualquer sistema operacional,  desde que executada em um navegador com suporte a HTML5 como Firefox, Chrome, Safari, Internet Explorer 9.</p>
-<p>A biblioteca <a target="_blank" href="http://jquery.com">JQuery</a> foi utilizada para ajudar no desenvolvimento das animações da simulação. Sua presença é percebida nas linhas de códigos que começam com '<strong>$</strong>'. O codigo '<strong>$("#para-simulacao").hide()</strong>', por exemplo, serve para esconder o botão de parar simulação.</p>
 <p>Porém o código principal da simulação encontra-se no arquivo <a target="_blank" href="main.js">main.js</a> que possui as classes Receptor, Transmissor, Pacote, e Resposta. Estas classes são o núcleo da simulação.<p>
 <p>O tratamento do timeout pode ser observado nos metodos "recebe" e "timeout" da classe Transmissor e no metodo "recebe" da classe Receptor.</p>
 <p>Toda a animação é contralada pela função "atualiza_simulacao()" que é executada, de tempo em tempo, de acordo com a velocidade escolhida.</p>
-<p>Durante a simulação, os erros nos pacotes acontecem proximo ao transmissor apenas para facilitar  a visualização do usuário. Idem para simulação de atraso na resposta que neste caso acontece próximo ao receptor.</p>
-
-
-<h3>Dúvidas, bugs e erros</h3>
-<p>Acreditamos que nossa simulação tenha implementado corretamente um método sem janela deslizantes e com timeout. Testamos cada parte separadamente, primeiro testamos o modo perfeito em que as chances de erro e timeout são 0%, depois testamos o erro com changes de erro diferentes, e depois o timeout. Por último testamos tudo junto, com chances de erro 50% e timeout 25%. </p> 
-<p>Caso encontre alguma dúvida, sobre a implementação ou até mesmo erros, por favor entre em contato com o grupo que tentaremos responder o mais rápido possível.</p> 
-
+<p>Durante a simulação, os erros nos pacotes acontecem próximo ao transmissor apenas para facilitar  a visualização do usuário. Idem para simulação de atraso na resposta que neste caso acontece próximo ao receptor.</p>
 
 
 </div>  
