@@ -1,0 +1,41 @@
+img, div  {margin:0px;padding:0px;}
+div.clear {clear:both;}
+
+#conteudo { margin: 0px auto; width:800px;}
+
+#simulador {margin: 0px auto;width:610px;height:170px;background:white;text-align:center;}
+#linha-de-transmissao {width:400px;}
+#computador-fonte,#linha-de-transmissao, #computador-destino { float:left;margin:0px;padding:0px;height:100px;}
+
+
+#linha-de-envio {height:50px;width:100%;border-bottom:1px solid blue;}
+
+#linha-de-resposta {height:49px;width:100%;}
+
+div.posicao-1, div.posicao-2, div.posicao-3 { height:50px;width:120px;float:left; margin-right:20px;}
+div.posicao-3 {margin-right:0px;}
+
+
+#linha-de-transmissao p.pacote {height:24px;width:100%;padding:0px;font-size:16px;line-height:24px;text-align:center;}
+
+#linha-de-envio p.pacote {margin-top:26px;}
+#linha-de-resposta  p.pacote {margin-top:0px;}
+
+.pacote { color:white; background:white; }
+.normal{color:white;background: green;}
+.erro {color:white;background: black;}
+.ack { color:black; background:yellow; }
+.nack { color:white; background:red; }
+.leg { width:50px;height:24px;margin-right:5px;}
+span.leg{ display:block;float:left;}
+
+#mensagem-transmissor, #mensagem-receptor{width:250px;height:30px;line-height:30px;border:1px solid blue;text-align:center;}
+#mensagem-transmissor{float:left;}
+#mensagem-receptor{float:right;}
+
+#inicia-simulacao, #para-simulacao{ height:50px;}
+
+#legenda { width:200px;float:left;}
+#controles,#selects {float:left;padding:0;margin:0;}
+#botoes { float:left; margin-right:50px;}
+
